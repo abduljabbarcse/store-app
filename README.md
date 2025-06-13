@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# 🛍️ Appscrip Task - E-commerce Product Page
 
-First, run the development server:
+## 🚀 Live Demo
+
+🌐 [View Live Site](https://684c5e0162a2c44f1489ad29--appscripabdul.netlify.app/)
+
+📦 [View GitHub Repository](https://github.com/abduljabbarcse/Appscrip-task-AbdulJabbar)
+
+---
+
+## 📋 Project Overview
+
+A responsive e-commerce product page built with **Next.js** and **TypeScript**, showcasing modern frontend best practices:
+
+- ⚙️ Server-side rendering (SSR)
+- 📱 Fully responsive design
+- 🧠 Global state management with Redux Toolkit
+- 🔍 SEO and accessibility optimized
+- 🖼️ Lucide React for icons
+- 📦 Integrated with FakeStoreAPI for mock product data
+
+
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Next.js (React), TypeScript
+- **State Management**: Redux Toolkit
+- **Styling**: CSS Modules
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **API**: [FakeStoreAPI](https://fakestoreapi.com/)
+- **Deployment**: Netlify
+
+---
+
+## ✅ Features Implemented
+
+### 🛒 Product Listing
+- Responsive grid layout
+- Product cards with images, prices, titles, and availability
+
+### 🔍 Filtering & Sorting
+- Filter by category, size, color, etc.
+- Sort by price, popularity
+- Collapsible sidebar on mobile
+
+
+
+### 📱 Responsive Design
+- Mobile-first layout
+- Adaptive components for all screen sizes
+- Mobile menu and collapsible filters
+
+### 🌐 SEO & Accessibility
+- Semantic HTML structure
+- Meta tags, alt attributes, and heading hierarchy
+- ARIA labels and keyboard navigation
+
+---
+
+## ⚙️ Performance Optimizations
+
+- Dynamic imports for heavy components
+- Optimized image rendering with `next/image`
+- Efficient and modular component structure
+
+---
+
+## 🧪 Future Improvements
+
+- 🔍 Product search functionality
+- 🧾 Product detail pages
+
+- 🔄 Real e-commerce backend integration
+
+
+---
+
+## 💻 Setup Instructions
+
+### 📦 Prerequisites
+- Node.js v16+
+- npm or yarn
+
+### 📥 Installation
+
+```bash
+git clone https://github.com/abduljabbarcse/Appscrip-task-AbdulJabbar.git
+cd Appscrip-task-AbdulJabbar
+npm install
+# or
+yarn install
+````
+
+### 🚧 Start Development Server
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 🔧 Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+# or
+yarn build
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Deployment Instructions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Deployed using **Netlify**:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Push the repository to GitHub
+2. Connect the repo to [Netlify](https://www.netlify.com/)
+3. Netlify auto-detects Next.js and configures build settings
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📩 Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Created by **Abdul Jabbar**
+📧 [abduljabbarcse@gmail.com](mailto:abduljabbarcse@gmail.com)
+
+---
+
