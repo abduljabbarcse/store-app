@@ -6,7 +6,8 @@ import { ProductWithStock } from "@/type/interFaces";
 interface ProductCardProps {
     product: ProductWithStock;
     isInWishlist: boolean;
-    onToggleWishlist: (productId: string) => void;
+    onToggleWishlist: () => void; // <-- Add this line
+
 }
 
 const ProductCard = ({ product, isInWishlist, onToggleWishlist }: ProductCardProps) => {
@@ -46,7 +47,7 @@ const ProductCard = ({ product, isInWishlist, onToggleWishlist }: ProductCardPro
                         aria-label={
                             isInWishlist ? "Remove from wishlist" : "Add to wishlist"
                         }
-                        onClick={() => onToggleWishlist(product.id)}
+                        onClick={onToggleWishlist}
                     >
                         <Heart size={24} strokeWidth={2} />
                     </button>
