@@ -5,10 +5,10 @@ export function useProducts() {
   async function fetchProducts(): Promise<Product[]> {
     try {
       const response = await fetch("https://fakestoreapi.com/products", {
-        cache: "no-store",
+        next: { revalidate: 60 },
       });
       if (!response.ok) throw new Error("Failed to fetch products");
-      
+
       const products = await response.json();
       console.log(products.length)
       return products.map((p: Product, idx: number) => ({
