@@ -9,9 +9,22 @@ const useFilterAndSortProducts = ({
     initialProducts,
     sortBy,
     filterOptions,
+    searchQuery = ""
 }: UseFilterAndSortProductsProps) => {
+
     const filteredAndSortedProducts = useMemo(() => {
-        const filtered = initialProducts.filter((product) => {
+        let filtered = initialProducts.filter(product => {
+            if (!searchQuery) return true;
+
+            const query = searchQuery.toLowerCase();
+            return (
+                product.title.toLowerCase().includes(query) ||
+                product.description.toLowerCase().includes(query) ||
+                product.category.toLowerCase().includes(query)
+            );
+        });
+
+        filtered = filtered.filter((product) => {
             const matchesFilters = Object.entries(filterOptions).every(
                 ([group, selected]) => {
                     if (!selected.length) return true;
@@ -43,7 +56,7 @@ const useFilterAndSortProducts = ({
         }
 
         return filtered;
-    }, [initialProducts, sortBy, filterOptions]);
+    }, [initialProducts, sortBy, filterOptions, searchQuery]);
 
     return filteredAndSortedProducts;
 };

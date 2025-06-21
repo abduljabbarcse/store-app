@@ -27,6 +27,8 @@ export interface ProductCatalogState {
   filterOptions: FilterOptions;
   wishlist: { [id: number]: boolean };
   filtersVisible: boolean;
+  searchQuery: string;
+
 }
 
 export type FilterGroups = {
@@ -52,4 +54,5 @@ export interface UseFilterAndSortProductsProps {
   initialProducts: Product[];
   sortBy: string;
   filterOptions: FilterOptions;
+  searchQuery: string
 }

@@ -11,6 +11,7 @@ const initialState: ProductCatalogState = {
     filterOptions: initialFilterOptions,
     wishlist: {},
     filtersVisible: typeof window !== 'undefined' ? window.innerWidth > 900 : true,
+    searchQuery: ""
 };
 
 const productCatalogSlice = createSlice({
@@ -35,6 +36,9 @@ const productCatalogSlice = createSlice({
         },
         setFiltersVisible: (state, action: PayloadAction<boolean>) => {
             state.filtersVisible = action.payload;
+        },
+        setSearchQuery: (state, action: PayloadAction<string>) => {
+            state.searchQuery = action.payload;
         },
         handleFilterCheck: (
             state,
@@ -69,6 +73,7 @@ export const {
     handleFilterCheck,
     handleUnselectAll,
     handleSelectAll,
+    setSearchQuery,
 } = productCatalogSlice.actions;
 
 export default productCatalogSlice.reducer;
