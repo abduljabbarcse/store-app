@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useEffect, useState } from "react";
 import { ProductCatalogProps, ProductWithStock } from "@/type/interFaces";
 import { useAppDispatch, useAppSelector } from "@/lib/hook";
 import {
