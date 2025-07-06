@@ -3,7 +3,7 @@
 
 ## 🚀 Live Demo
 
-🌐 [View Live Site](https://684c5e0162a2c44f1489ad29--appscripabdul.netlify.app/)
+🌐 [View Live Site](https://store-app-abdul.netlify.app/)
 
 📦 [View GitHub Repository](https://github.com/abduljabbarcse/Appscrip-task-AbdulJabbar)
 
