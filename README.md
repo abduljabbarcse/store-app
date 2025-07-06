@@ -1,5 +1,5 @@
 
-# 🛍️ Appscrip Task - E-commerce Product Page
+# E-commerce Product Page
 
 ## 🚀 Live Demo
 
